@@ -15,6 +15,7 @@ namespace MAF_GR___Locadora_Veículos
         public frmCadCliente()
         {
             InitializeComponent();
+            /*jhgkfjhgfjhfjhgfjh*/
         }
     }
 }
