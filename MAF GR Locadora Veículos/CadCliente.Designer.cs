@@ -1,4 +1,4 @@
-﻿namespace MAF_GR___Locadora_Veículos
+﻿namespace MAF_GR___Locadora_Veículos // Banco de dados
 {
     partial class frmCadCliente
     {
