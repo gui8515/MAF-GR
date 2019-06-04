@@ -14,7 +14,7 @@ namespace MAF_GR_Locadora_Veículos
         private int numero;
 
         //Método construtor
-        public funcionario(string pcpf, string )
+        public funcionario(string pcpf)
         {
 
         }
