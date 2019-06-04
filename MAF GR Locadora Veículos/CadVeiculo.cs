@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MAF_GR___Locadora_Veículos
+namespace MAF_GR_Locadora_Veículos
 {
     public partial class frmCadVeiculo : Form
     {

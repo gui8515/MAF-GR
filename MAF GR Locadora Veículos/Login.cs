@@ -28,7 +28,7 @@ namespace MAF_GR_Locadora_Veículos
 
             if (verifica == true)
             {
-                MessageBox.Show("Usuário " + txtUsuario.Text + " Logado com sucesso!" + "\n" + "Bem Vindo ao Sistema MAF GR!!!");
+                MessageBox.Show("Usuário " + txtUsuario.Text + " Logado com sucesso!", "Acesso Liberado");
                 this.Hide();
                 frmMenu logMenu = new frmMenu();
                 logMenu.FormClosed += (s, args) => this.Close();
@@ -36,12 +36,12 @@ namespace MAF_GR_Locadora_Veículos
             }
             else
             {
-                MessageBox.Show("Usuário ou senha inválido!");
+                MessageBox.Show("Usuário ou senha inválido!", "Atenção");
 
                 txtUsuario.Clear();
                 txtSenha.Clear();
                 txtUsuario.Focus();
-            }            
+            }
         }
     }
 }

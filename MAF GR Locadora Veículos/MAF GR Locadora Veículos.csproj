@@ -51,11 +51,11 @@
   <ItemGroup>
     <Compile Include="aut_login.cs" />
     <Compile Include="bd.cs" />
-    <Compile Include="CadVeiculo.cs">
+    <Compile Include="CadFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadVeiculo.Designer.cs">
-      <DependentUpon>CadVeiculo.cs</DependentUpon>
+    <Compile Include="CadFuncionario.Designer.cs">
+      <DependentUpon>CadFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="CadCliente.cs">
       <SubType>Form</SubType>
@@ -63,14 +63,14 @@
     <Compile Include="CadCliente.Designer.cs">
       <DependentUpon>CadCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadFuncionario.cs">
+    <Compile Include="CadVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadFuncionario.Designer.cs">
-      <DependentUpon>CadFuncionario.cs</DependentUpon>
+    <Compile Include="CadVeiculo.Designer.cs">
+      <DependentUpon>CadVeiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.cs" />
-    <Compile Include="funcionario.cs" />
+    <Compile Include="Funcionario.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,14 +88,14 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CadVeiculo.resx">
-      <DependentUpon>CadVeiculo.cs</DependentUpon>
+    <EmbeddedResource Include="CadFuncionario.resx">
+      <DependentUpon>CadFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadCliente.resx">
       <DependentUpon>CadCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadFuncionario.resx">
-      <DependentUpon>CadFuncionario.cs</DependentUpon>
+    <EmbeddedResource Include="CadVeiculo.resx">
+      <DependentUpon>CadVeiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

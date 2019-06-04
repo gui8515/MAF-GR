@@ -1,4 +1,4 @@
-﻿namespace MAF_GR___Locadora_Veículos // Banco de dados
+﻿namespace MAF_GR_Locadora_Veículos
 {
     partial class frmCadCliente
     {
@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cmbEstCliente = new System.Windows.Forms.ComboBox();
+            this.lblCEPCliente = new System.Windows.Forms.Label();
+            this.txtCNHCliente = new System.Windows.Forms.TextBox();
+            this.mtxCEPCliente = new System.Windows.Forms.MaskedTextBox();
+            this.lblCNHCliente = new System.Windows.Forms.Label();
             this.btnAdFotoCliente = new System.Windows.Forms.Button();
+            this.picFotoCliente = new System.Windows.Forms.PictureBox();
             this.btnCancCliente = new System.Windows.Forms.Button();
             this.btnSalvarCliente = new System.Windows.Forms.Button();
             this.txtCidCliente = new System.Windows.Forms.TextBox();
@@ -42,7 +48,7 @@
             this.mtxDataCliente = new System.Windows.Forms.MaskedTextBox();
             this.mtxCPFCliente = new System.Windows.Forms.MaskedTextBox();
             this.txtEmailCliente = new System.Windows.Forms.TextBox();
-            this.txtEndCliente = new System.Windows.Forms.TextBox();
+            this.txtRuaCliente = new System.Windows.Forms.TextBox();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.lblEmailCliente = new System.Windows.Forms.Label();
             this.lblTelCliente = new System.Windows.Forms.Label();
@@ -50,16 +56,59 @@
             this.lblDataCliente = new System.Windows.Forms.Label();
             this.lblNomeCliente = new System.Windows.Forms.Label();
             this.lblCPFCliente = new System.Windows.Forms.Label();
-            this.mtxCEPCliente = new System.Windows.Forms.MaskedTextBox();
-            this.lblCNHCliente = new System.Windows.Forms.Label();
-            this.txtCNHCliente = new System.Windows.Forms.TextBox();
-            this.lblCEPCliente = new System.Windows.Forms.Label();
-            this.cmbEstCliente = new System.Windows.Forms.ComboBox();
-            this.picFotoCliente = new System.Windows.Forms.PictureBox();
-            this.lblRespUFCliente = new System.Windows.Forms.Label();
-            this.lblUFCliente = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picFotoCliente)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cmbEstCliente
+            // 
+            this.cmbEstCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbEstCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEstCliente.FormattingEnabled = true;
+            this.cmbEstCliente.Location = new System.Drawing.Point(622, 263);
+            this.cmbEstCliente.Name = "cmbEstCliente";
+            this.cmbEstCliente.Size = new System.Drawing.Size(80, 24);
+            this.cmbEstCliente.TabIndex = 73;
+            // 
+            // lblCEPCliente
+            // 
+            this.lblCEPCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCEPCliente.AutoSize = true;
+            this.lblCEPCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCEPCliente.Location = new System.Drawing.Point(346, 148);
+            this.lblCEPCliente.Name = "lblCEPCliente";
+            this.lblCEPCliente.Size = new System.Drawing.Size(38, 16);
+            this.lblCEPCliente.TabIndex = 62;
+            this.lblCEPCliente.Text = "CEP";
+            // 
+            // txtCNHCliente
+            // 
+            this.txtCNHCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCNHCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCNHCliente.Location = new System.Drawing.Point(392, 19);
+            this.txtCNHCliente.Name = "txtCNHCliente";
+            this.txtCNHCliente.Size = new System.Drawing.Size(100, 22);
+            this.txtCNHCliente.TabIndex = 64;
+            // 
+            // mtxCEPCliente
+            // 
+            this.mtxCEPCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mtxCEPCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxCEPCliente.Location = new System.Drawing.Point(392, 142);
+            this.mtxCEPCliente.Mask = "00.000-000";
+            this.mtxCEPCliente.Name = "mtxCEPCliente";
+            this.mtxCEPCliente.Size = new System.Drawing.Size(101, 22);
+            this.mtxCEPCliente.TabIndex = 68;
+            // 
+            // lblCNHCliente
+            // 
+            this.lblCNHCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCNHCliente.AutoSize = true;
+            this.lblCNHCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCNHCliente.Location = new System.Drawing.Point(346, 25);
+            this.lblCNHCliente.Name = "lblCNHCliente";
+            this.lblCNHCliente.Size = new System.Drawing.Size(40, 16);
+            this.lblCNHCliente.TabIndex = 63;
+            this.lblCNHCliente.Text = "CNH";
             // 
             // btnAdFotoCliente
             // 
@@ -69,9 +118,20 @@
             this.btnAdFotoCliente.Location = new System.Drawing.Point(47, 205);
             this.btnAdFotoCliente.Name = "btnAdFotoCliente";
             this.btnAdFotoCliente.Size = new System.Drawing.Size(130, 43);
-            this.btnAdFotoCliente.TabIndex = 17;
+            this.btnAdFotoCliente.TabIndex = 78;
             this.btnAdFotoCliente.Text = "Adicionar Foto";
             this.btnAdFotoCliente.UseVisualStyleBackColor = false;
+            // 
+            // picFotoCliente
+            // 
+            this.picFotoCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picFotoCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picFotoCliente.Location = new System.Drawing.Point(12, 19);
+            this.picFotoCliente.Name = "picFotoCliente";
+            this.picFotoCliente.Size = new System.Drawing.Size(200, 170);
+            this.picFotoCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picFotoCliente.TabIndex = 79;
+            this.picFotoCliente.TabStop = false;
             // 
             // btnCancCliente
             // 
@@ -81,9 +141,10 @@
             this.btnCancCliente.Location = new System.Drawing.Point(759, 458);
             this.btnCancCliente.Name = "btnCancCliente";
             this.btnCancCliente.Size = new System.Drawing.Size(130, 43);
-            this.btnCancCliente.TabIndex = 16;
+            this.btnCancCliente.TabIndex = 77;
             this.btnCancCliente.Text = "Cancelar";
             this.btnCancCliente.UseVisualStyleBackColor = false;
+            this.btnCancCliente.Click += new System.EventHandler(this.btnCancCliente_Click);
             // 
             // btnSalvarCliente
             // 
@@ -93,9 +154,10 @@
             this.btnSalvarCliente.Location = new System.Drawing.Point(623, 458);
             this.btnSalvarCliente.Name = "btnSalvarCliente";
             this.btnSalvarCliente.Size = new System.Drawing.Size(130, 43);
-            this.btnSalvarCliente.TabIndex = 15;
+            this.btnSalvarCliente.TabIndex = 76;
             this.btnSalvarCliente.Text = "Salvar";
             this.btnSalvarCliente.UseVisualStyleBackColor = false;
+            this.btnSalvarCliente.Click += new System.EventHandler(this.btnSalvarCliente_Click);
             // 
             // txtCidCliente
             // 
@@ -104,7 +166,7 @@
             this.txtCidCliente.Location = new System.Drawing.Point(392, 265);
             this.txtCidCliente.Name = "txtCidCliente";
             this.txtCidCliente.Size = new System.Drawing.Size(161, 22);
-            this.txtCidCliente.TabIndex = 11;
+            this.txtCidCliente.TabIndex = 72;
             // 
             // txtBairCliente
             // 
@@ -113,7 +175,7 @@
             this.txtBairCliente.Location = new System.Drawing.Point(392, 224);
             this.txtBairCliente.Name = "txtBairCliente";
             this.txtBairCliente.Size = new System.Drawing.Size(357, 22);
-            this.txtBairCliente.TabIndex = 9;
+            this.txtBairCliente.TabIndex = 71;
             // 
             // lblCidCliente
             // 
@@ -123,7 +185,7 @@
             this.lblCidCliente.Location = new System.Drawing.Point(328, 271);
             this.lblCidCliente.Name = "lblCidCliente";
             this.lblCidCliente.Size = new System.Drawing.Size(58, 16);
-            this.lblCidCliente.TabIndex = 0;
+            this.lblCidCliente.TabIndex = 60;
             this.lblCidCliente.Text = "Cidade";
             // 
             // lblEstCliente
@@ -134,7 +196,7 @@
             this.lblEstCliente.Location = new System.Drawing.Point(559, 271);
             this.lblEstCliente.Name = "lblEstCliente";
             this.lblEstCliente.Size = new System.Drawing.Size(57, 16);
-            this.lblEstCliente.TabIndex = 0;
+            this.lblEstCliente.TabIndex = 52;
             this.lblEstCliente.Text = "Estado";
             // 
             // lblBairCliente
@@ -145,7 +207,7 @@
             this.lblBairCliente.Location = new System.Drawing.Point(336, 230);
             this.lblBairCliente.Name = "lblBairCliente";
             this.lblBairCliente.Size = new System.Drawing.Size(50, 16);
-            this.lblBairCliente.TabIndex = 0;
+            this.lblBairCliente.TabIndex = 58;
             this.lblBairCliente.Text = "Bairro";
             // 
             // txtNumCliente
@@ -155,7 +217,7 @@
             this.txtNumCliente.Location = new System.Drawing.Point(787, 183);
             this.txtNumCliente.Name = "txtNumCliente";
             this.txtNumCliente.Size = new System.Drawing.Size(89, 22);
-            this.txtNumCliente.TabIndex = 8;
+            this.txtNumCliente.TabIndex = 70;
             // 
             // lblNumCliente
             // 
@@ -165,7 +227,7 @@
             this.lblNumCliente.Location = new System.Drawing.Point(756, 189);
             this.lblNumCliente.Name = "lblNumCliente";
             this.lblNumCliente.Size = new System.Drawing.Size(25, 16);
-            this.lblNumCliente.TabIndex = 0;
+            this.lblNumCliente.TabIndex = 57;
             this.lblNumCliente.Text = "Nº";
             // 
             // mtxTelCliente
@@ -176,7 +238,7 @@
             this.mtxTelCliente.Mask = "(99) 00000-0000";
             this.mtxTelCliente.Name = "mtxTelCliente";
             this.mtxTelCliente.Size = new System.Drawing.Size(100, 22);
-            this.mtxTelCliente.TabIndex = 13;
+            this.mtxTelCliente.TabIndex = 74;
             // 
             // mtxDataCliente
             // 
@@ -186,7 +248,7 @@
             this.mtxDataCliente.Mask = "00/00/0000";
             this.mtxDataCliente.Name = "mtxDataCliente";
             this.mtxDataCliente.Size = new System.Drawing.Size(100, 22);
-            this.mtxDataCliente.TabIndex = 4;
+            this.mtxDataCliente.TabIndex = 66;
             this.mtxDataCliente.ValidatingType = typeof(System.DateTime);
             // 
             // mtxCPFCliente
@@ -197,7 +259,7 @@
             this.mtxCPFCliente.Mask = "000.000.000-00";
             this.mtxCPFCliente.Name = "mtxCPFCliente";
             this.mtxCPFCliente.Size = new System.Drawing.Size(101, 22);
-            this.mtxCPFCliente.TabIndex = 3;
+            this.mtxCPFCliente.TabIndex = 65;
             // 
             // txtEmailCliente
             // 
@@ -206,16 +268,16 @@
             this.txtEmailCliente.Location = new System.Drawing.Point(392, 347);
             this.txtEmailCliente.Name = "txtEmailCliente";
             this.txtEmailCliente.Size = new System.Drawing.Size(353, 22);
-            this.txtEmailCliente.TabIndex = 14;
+            this.txtEmailCliente.TabIndex = 75;
             // 
-            // txtEndCliente
+            // txtRuaCliente
             // 
-            this.txtEndCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEndCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEndCliente.Location = new System.Drawing.Point(392, 183);
-            this.txtEndCliente.Name = "txtEndCliente";
-            this.txtEndCliente.Size = new System.Drawing.Size(357, 22);
-            this.txtEndCliente.TabIndex = 7;
+            this.txtRuaCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRuaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRuaCliente.Location = new System.Drawing.Point(392, 183);
+            this.txtRuaCliente.Name = "txtRuaCliente";
+            this.txtRuaCliente.Size = new System.Drawing.Size(357, 22);
+            this.txtRuaCliente.TabIndex = 69;
             // 
             // txtNomeCliente
             // 
@@ -224,7 +286,7 @@
             this.txtNomeCliente.Location = new System.Drawing.Point(392, 101);
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(484, 22);
-            this.txtNomeCliente.TabIndex = 5;
+            this.txtNomeCliente.TabIndex = 67;
             // 
             // lblEmailCliente
             // 
@@ -234,7 +296,7 @@
             this.lblEmailCliente.Location = new System.Drawing.Point(334, 353);
             this.lblEmailCliente.Name = "lblEmailCliente";
             this.lblEmailCliente.Size = new System.Drawing.Size(52, 16);
-            this.lblEmailCliente.TabIndex = 0;
+            this.lblEmailCliente.TabIndex = 56;
             this.lblEmailCliente.Text = "E-mail";
             // 
             // lblTelCliente
@@ -245,7 +307,7 @@
             this.lblTelCliente.Location = new System.Drawing.Point(316, 312);
             this.lblTelCliente.Name = "lblTelCliente";
             this.lblTelCliente.Size = new System.Drawing.Size(70, 16);
-            this.lblTelCliente.TabIndex = 0;
+            this.lblTelCliente.TabIndex = 55;
             this.lblTelCliente.Text = "Telefone";
             // 
             // lblRuaCliente
@@ -256,7 +318,7 @@
             this.lblRuaCliente.Location = new System.Drawing.Point(348, 189);
             this.lblRuaCliente.Name = "lblRuaCliente";
             this.lblRuaCliente.Size = new System.Drawing.Size(36, 16);
-            this.lblRuaCliente.TabIndex = 0;
+            this.lblRuaCliente.TabIndex = 54;
             this.lblRuaCliente.Text = "Rua";
             // 
             // lblDataCliente
@@ -267,7 +329,7 @@
             this.lblDataCliente.Location = new System.Drawing.Point(619, 66);
             this.lblDataCliente.Name = "lblDataCliente";
             this.lblDataCliente.Size = new System.Drawing.Size(149, 16);
-            this.lblDataCliente.TabIndex = 0;
+            this.lblDataCliente.TabIndex = 53;
             this.lblDataCliente.Text = "Data de Nascimento";
             // 
             // lblNomeCliente
@@ -278,7 +340,7 @@
             this.lblNomeCliente.Location = new System.Drawing.Point(267, 107);
             this.lblNomeCliente.Name = "lblNomeCliente";
             this.lblNomeCliente.Size = new System.Drawing.Size(119, 16);
-            this.lblNomeCliente.TabIndex = 0;
+            this.lblNomeCliente.TabIndex = 59;
             this.lblNomeCliente.Text = "Nome Completo";
             // 
             // lblCPFCliente
@@ -289,99 +351,14 @@
             this.lblCPFCliente.Location = new System.Drawing.Point(349, 66);
             this.lblCPFCliente.Name = "lblCPFCliente";
             this.lblCPFCliente.Size = new System.Drawing.Size(37, 16);
-            this.lblCPFCliente.TabIndex = 0;
+            this.lblCPFCliente.TabIndex = 61;
             this.lblCPFCliente.Text = "CPF";
-            // 
-            // mtxCEPCliente
-            // 
-            this.mtxCEPCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mtxCEPCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxCEPCliente.Location = new System.Drawing.Point(392, 142);
-            this.mtxCEPCliente.Mask = "000.000.000-00";
-            this.mtxCEPCliente.Name = "mtxCEPCliente";
-            this.mtxCEPCliente.Size = new System.Drawing.Size(101, 22);
-            this.mtxCEPCliente.TabIndex = 6;
-            // 
-            // lblCNHCliente
-            // 
-            this.lblCNHCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCNHCliente.AutoSize = true;
-            this.lblCNHCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNHCliente.Location = new System.Drawing.Point(346, 25);
-            this.lblCNHCliente.Name = "lblCNHCliente";
-            this.lblCNHCliente.Size = new System.Drawing.Size(40, 16);
-            this.lblCNHCliente.TabIndex = 0;
-            this.lblCNHCliente.Text = "CNH";
-            // 
-            // txtCNHCliente
-            // 
-            this.txtCNHCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCNHCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCNHCliente.Location = new System.Drawing.Point(392, 19);
-            this.txtCNHCliente.Name = "txtCNHCliente";
-            this.txtCNHCliente.Size = new System.Drawing.Size(100, 22);
-            this.txtCNHCliente.TabIndex = 2;
-            // 
-            // lblCEPCliente
-            // 
-            this.lblCEPCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCEPCliente.AutoSize = true;
-            this.lblCEPCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCEPCliente.Location = new System.Drawing.Point(346, 148);
-            this.lblCEPCliente.Name = "lblCEPCliente";
-            this.lblCEPCliente.Size = new System.Drawing.Size(38, 16);
-            this.lblCEPCliente.TabIndex = 0;
-            this.lblCEPCliente.Text = "CEP";
-            // 
-            // cmbEstCliente
-            // 
-            this.cmbEstCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbEstCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEstCliente.FormattingEnabled = true;
-            this.cmbEstCliente.Location = new System.Drawing.Point(622, 263);
-            this.cmbEstCliente.Name = "cmbEstCliente";
-            this.cmbEstCliente.Size = new System.Drawing.Size(80, 24);
-            this.cmbEstCliente.TabIndex = 12;
-            // 
-            // picFotoCliente
-            // 
-            this.picFotoCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picFotoCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picFotoCliente.Location = new System.Drawing.Point(12, 19);
-            this.picFotoCliente.Name = "picFotoCliente";
-            this.picFotoCliente.Size = new System.Drawing.Size(200, 170);
-            this.picFotoCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picFotoCliente.TabIndex = 49;
-            this.picFotoCliente.TabStop = false;
-            // 
-            // lblRespUFCliente
-            // 
-            this.lblRespUFCliente.AutoSize = true;
-            this.lblRespUFCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRespUFCliente.Location = new System.Drawing.Point(784, 271);
-            this.lblRespUFCliente.Name = "lblRespUFCliente";
-            this.lblRespUFCliente.Size = new System.Drawing.Size(16, 16);
-            this.lblRespUFCliente.TabIndex = 51;
-            this.lblRespUFCliente.Text = "--";
-            // 
-            // lblUFCliente
-            // 
-            this.lblUFCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblUFCliente.AutoSize = true;
-            this.lblUFCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUFCliente.Location = new System.Drawing.Point(753, 271);
-            this.lblUFCliente.Name = "lblUFCliente";
-            this.lblUFCliente.Size = new System.Drawing.Size(28, 16);
-            this.lblUFCliente.TabIndex = 50;
-            this.lblUFCliente.Text = "UF";
             // 
             // frmCadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(901, 513);
-            this.Controls.Add(this.lblRespUFCliente);
-            this.Controls.Add(this.lblUFCliente);
             this.Controls.Add(this.cmbEstCliente);
             this.Controls.Add(this.lblCEPCliente);
             this.Controls.Add(this.txtCNHCliente);
@@ -402,7 +379,7 @@
             this.Controls.Add(this.mtxDataCliente);
             this.Controls.Add(this.mtxCPFCliente);
             this.Controls.Add(this.txtEmailCliente);
-            this.Controls.Add(this.txtEndCliente);
+            this.Controls.Add(this.txtRuaCliente);
             this.Controls.Add(this.txtNomeCliente);
             this.Controls.Add(this.lblEmailCliente);
             this.Controls.Add(this.lblTelCliente);
@@ -412,6 +389,7 @@
             this.Controls.Add(this.lblCPFCliente);
             this.Name = "frmCadCliente";
             this.Text = "Cadastro de Cliente";
+            this.Load += new System.EventHandler(this.frmCadCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picFotoCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -419,7 +397,11 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.ComboBox cmbEstCliente;
+        private System.Windows.Forms.Label lblCEPCliente;
+        private System.Windows.Forms.TextBox txtCNHCliente;
+        private System.Windows.Forms.MaskedTextBox mtxCEPCliente;
+        private System.Windows.Forms.Label lblCNHCliente;
         private System.Windows.Forms.Button btnAdFotoCliente;
         private System.Windows.Forms.PictureBox picFotoCliente;
         private System.Windows.Forms.Button btnCancCliente;
@@ -435,7 +417,7 @@
         private System.Windows.Forms.MaskedTextBox mtxDataCliente;
         private System.Windows.Forms.MaskedTextBox mtxCPFCliente;
         private System.Windows.Forms.TextBox txtEmailCliente;
-        private System.Windows.Forms.TextBox txtEndCliente;
+        private System.Windows.Forms.TextBox txtRuaCliente;
         private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.Label lblEmailCliente;
         private System.Windows.Forms.Label lblTelCliente;
@@ -443,12 +425,5 @@
         private System.Windows.Forms.Label lblDataCliente;
         private System.Windows.Forms.Label lblNomeCliente;
         private System.Windows.Forms.Label lblCPFCliente;
-        private System.Windows.Forms.MaskedTextBox mtxCEPCliente;
-        private System.Windows.Forms.Label lblCNHCliente;
-        private System.Windows.Forms.TextBox txtCNHCliente;
-        private System.Windows.Forms.Label lblCEPCliente;
-        private System.Windows.Forms.ComboBox cmbEstCliente;
-        private System.Windows.Forms.Label lblRespUFCliente;
-        private System.Windows.Forms.Label lblUFCliente;
     }
 }
