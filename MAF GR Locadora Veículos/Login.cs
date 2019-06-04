@@ -43,5 +43,10 @@ namespace MAF_GR_Locadora_Veículos
                 txtUsuario.Focus();
             }            
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

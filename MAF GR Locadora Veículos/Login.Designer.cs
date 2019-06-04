@@ -35,6 +35,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.llbRecSenha = new System.Windows.Forms.LinkLabel();
+            this.btnSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,9 +44,9 @@
             this.btnAcessar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAcessar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAcessar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcessar.Location = new System.Drawing.Point(339, 370);
+            this.btnAcessar.Location = new System.Drawing.Point(134, 370);
             this.btnAcessar.Name = "btnAcessar";
-            this.btnAcessar.Size = new System.Drawing.Size(226, 30);
+            this.btnAcessar.Size = new System.Drawing.Size(80, 30);
             this.btnAcessar.TabIndex = 10;
             this.btnAcessar.Text = "Acessar";
             this.btnAcessar.UseVisualStyleBackColor = false;
@@ -55,7 +56,7 @@
             // 
             this.txtSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(339, 311);
+            this.txtSenha.Location = new System.Drawing.Point(134, 311);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(226, 22);
             this.txtSenha.TabIndex = 9;
@@ -65,7 +66,7 @@
             // 
             this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(339, 252);
+            this.txtUsuario.Location = new System.Drawing.Point(134, 252);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(226, 22);
             this.txtUsuario.TabIndex = 8;
@@ -75,7 +76,7 @@
             this.lblSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(336, 292);
+            this.lblSenha.Location = new System.Drawing.Point(131, 292);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(56, 16);
             this.lblSenha.TabIndex = 7;
@@ -86,7 +87,7 @@
             this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(336, 233);
+            this.lblUsuario.Location = new System.Drawing.Point(131, 233);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(66, 16);
             this.lblUsuario.TabIndex = 6;
@@ -96,7 +97,7 @@
             // 
             this.picLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picLogo.Image = global::MAF_GR_Locadora_Veículos.Properties.Resources.Logo_MAF_GR;
-            this.picLogo.Location = new System.Drawing.Point(339, 12);
+            this.picLogo.Location = new System.Drawing.Point(134, 12);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(226, 180);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,18 +109,32 @@
             this.llbRecSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.llbRecSenha.AutoSize = true;
             this.llbRecSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llbRecSenha.Location = new System.Drawing.Point(396, 420);
+            this.llbRecSenha.Location = new System.Drawing.Point(191, 420);
             this.llbRecSenha.Name = "llbRecSenha";
             this.llbRecSenha.Size = new System.Drawing.Size(112, 16);
             this.llbRecSenha.TabIndex = 13;
             this.llbRecSenha.TabStop = true;
             this.llbRecSenha.Text = "Recuperar senha";
             // 
+            // btnSair
+            // 
+            this.btnSair.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSair.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(280, 370);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(80, 30);
+            this.btnSair.TabIndex = 14;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 513);
+            this.ClientSize = new System.Drawing.Size(490, 513);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.llbRecSenha);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.btnAcessar);
@@ -144,6 +159,7 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.LinkLabel llbRecSenha;
+        private System.Windows.Forms.Button btnSair;
     }
 }
 
