@@ -26,7 +26,7 @@ namespace MAF_GR_Locadora_Veículos
             {
                 int retorno = -1;
 
-                bd banco = new bd("mafgr_loc_veiculos");
+                bd banco = new bd();
 
                 string sql = "SELECT COUNT(*) FROM tb_funcionario WHERE Login=@login AND Senha=@senha";
 
