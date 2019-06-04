@@ -19,19 +19,23 @@ namespace MAF_GR_Locadora_Veículos
 
         private void btnSalvarFunc_Click(object sender, EventArgs e)
         {
+            //Metodo de conversão
+            int num = Convert.ToInt32(txtNumFunc.Text);
+
             //Instanciando a classe Funcionario (objeto setFunc)
-            Funcionario setFunc = new Funcionario(mtxCPFFunc.Text, mtxDataFunc.Text, txtNomeFunc.Text, mtxCPFFunc.Text, txtRuaFunc.Text, txtNumFunc.Text, txtBairFunc.Text, txtCidFunc.Text, cmbEstFunc.SelectedItem.ToString(), mtxTelFunc.Text, txtEmailFunc.Text, txtLoginFunc.Text, txtSenhaFunc.Text);
+            Funcionario setFunc = new Funcionario(mtxCPFFunc.Text, mtxDataFunc.Text, txtNomeFunc.Text, mtxCPFFunc.Text, txtRuaFunc.Text, txtBairFunc.Text, txtCidFunc.Text, cmbEstFunc.SelectedItem.ToString(), mtxTelFunc.Text, txtEmailFunc.Text, txtLoginFunc.Text, txtSenhaFunc.Text, num);
 
             //Utilizando o objeto setFunc
             bool verifica = setFunc.setFuncionario();
 
             if (verifica == true)
             {
-                MessageBox.Show("Funcionário cadastrado com sucesso", "Message");
+                setFunc.setFuncionario();
+                MessageBox.Show("Funcionário cadastrado com sucesso");
             }
             else
             {
-                MessageBox.Show("Erro ao cadastrar o funcionário", "Atenção");
+                MessageBox.Show("Erro ao cadastrar");
             }
         }
 

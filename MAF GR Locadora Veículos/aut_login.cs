@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace MAF_GR_Locadora_Veículos
@@ -41,12 +39,10 @@ namespace MAF_GR_Locadora_Veículos
 
                 banco.desconecta(banco.conecta());
 
-                return retorno > 0;
+                return retorno >0;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao conectar no banco de dados!" + "\n" + "Erro: " + ex.Message, "Banco de Dados");
-                Environment.Exit(1);
                 return false;
             }
         }

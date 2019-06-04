@@ -69,7 +69,6 @@
     <Compile Include="CadVeiculo.Designer.cs">
       <DependentUpon>CadVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cliente.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>

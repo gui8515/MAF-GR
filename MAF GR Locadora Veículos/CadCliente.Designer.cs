@@ -48,7 +48,7 @@
             this.mtxDataCliente = new System.Windows.Forms.MaskedTextBox();
             this.mtxCPFCliente = new System.Windows.Forms.MaskedTextBox();
             this.txtEmailCliente = new System.Windows.Forms.TextBox();
-            this.txtRuaCliente = new System.Windows.Forms.TextBox();
+            this.txtEndCliente = new System.Windows.Forms.TextBox();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.lblEmailCliente = new System.Windows.Forms.Label();
             this.lblTelCliente = new System.Windows.Forms.Label();
@@ -94,7 +94,7 @@
             this.mtxCEPCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mtxCEPCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mtxCEPCliente.Location = new System.Drawing.Point(392, 142);
-            this.mtxCEPCliente.Mask = "00.000-000";
+            this.mtxCEPCliente.Mask = "000.000.000-00";
             this.mtxCEPCliente.Name = "mtxCEPCliente";
             this.mtxCEPCliente.Size = new System.Drawing.Size(101, 22);
             this.mtxCEPCliente.TabIndex = 68;
@@ -144,7 +144,6 @@
             this.btnCancCliente.TabIndex = 77;
             this.btnCancCliente.Text = "Cancelar";
             this.btnCancCliente.UseVisualStyleBackColor = false;
-            this.btnCancCliente.Click += new System.EventHandler(this.btnCancCliente_Click);
             // 
             // btnSalvarCliente
             // 
@@ -157,7 +156,6 @@
             this.btnSalvarCliente.TabIndex = 76;
             this.btnSalvarCliente.Text = "Salvar";
             this.btnSalvarCliente.UseVisualStyleBackColor = false;
-            this.btnSalvarCliente.Click += new System.EventHandler(this.btnSalvarCliente_Click);
             // 
             // txtCidCliente
             // 
@@ -270,14 +268,14 @@
             this.txtEmailCliente.Size = new System.Drawing.Size(353, 22);
             this.txtEmailCliente.TabIndex = 75;
             // 
-            // txtRuaCliente
+            // txtEndCliente
             // 
-            this.txtRuaCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtRuaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRuaCliente.Location = new System.Drawing.Point(392, 183);
-            this.txtRuaCliente.Name = "txtRuaCliente";
-            this.txtRuaCliente.Size = new System.Drawing.Size(357, 22);
-            this.txtRuaCliente.TabIndex = 69;
+            this.txtEndCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEndCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndCliente.Location = new System.Drawing.Point(392, 183);
+            this.txtEndCliente.Name = "txtEndCliente";
+            this.txtEndCliente.Size = new System.Drawing.Size(357, 22);
+            this.txtEndCliente.TabIndex = 69;
             // 
             // txtNomeCliente
             // 
@@ -379,7 +377,7 @@
             this.Controls.Add(this.mtxDataCliente);
             this.Controls.Add(this.mtxCPFCliente);
             this.Controls.Add(this.txtEmailCliente);
-            this.Controls.Add(this.txtRuaCliente);
+            this.Controls.Add(this.txtEndCliente);
             this.Controls.Add(this.txtNomeCliente);
             this.Controls.Add(this.lblEmailCliente);
             this.Controls.Add(this.lblTelCliente);
@@ -389,7 +387,6 @@
             this.Controls.Add(this.lblCPFCliente);
             this.Name = "frmCadCliente";
             this.Text = "Cadastro de Cliente";
-            this.Load += new System.EventHandler(this.frmCadCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picFotoCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -417,7 +414,7 @@
         private System.Windows.Forms.MaskedTextBox mtxDataCliente;
         private System.Windows.Forms.MaskedTextBox mtxCPFCliente;
         private System.Windows.Forms.TextBox txtEmailCliente;
-        private System.Windows.Forms.TextBox txtRuaCliente;
+        private System.Windows.Forms.TextBox txtEndCliente;
         private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.Label lblEmailCliente;
         private System.Windows.Forms.Label lblTelCliente;

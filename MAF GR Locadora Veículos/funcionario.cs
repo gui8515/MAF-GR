@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace MAF_GR_Locadora_Veículos
@@ -11,18 +10,17 @@ namespace MAF_GR_Locadora_Veículos
     class Funcionario
     {
         //Atributos
-        private string cpf, data_nasc, nome, cep, rua, numero, bairro, cidade, estado, telefone, email, login, senha;
-        //private int numero;
+        private string cpf, data_nasc, nome, cep, rua, bairro, cidade, estado, telefone, email, login, senha;
+        private int numero;
 
         //Metodo construtor
-        public Funcionario(string pcpf, string pdt_nasc, string pnome, string pcep, string prua, string pnumero, string pbairro, string pcidade, string pestado, string ptelef, string pemail, string plogin, string psenha)
+        public Funcionario(string pcpf, string pdt_nasc, string pnome, string pcep, string prua, string pbairro, string pcidade, string pestado, string ptelef, string pemail, string plogin, string psenha, int pnumero)
         {
             this.cpf = pcpf;
             this.data_nasc = pdt_nasc;
             this.nome = pnome;
             this.cep = pcep;
             this.rua = prua;
-            this.numero = pnumero;
             this.bairro = pbairro;
             this.cidade = pcidade;
             this.estado = pestado;
@@ -30,6 +28,7 @@ namespace MAF_GR_Locadora_Veículos
             this.email = pemail;
             this.login = plogin;
             this.senha = psenha;
+            this.numero = pnumero;
         }
 
         //Metodo de cadastrar
@@ -39,7 +38,7 @@ namespace MAF_GR_Locadora_Veículos
             {
                 bd banco = new bd("mafgr_loc_veiculos");
 
-                string sql = "INSERT INTO tb_funcionario (ID_func, CPF, Data_nasc, Nome, CEP, Rua, Numero, Bairro, Cidade, Estado, Telefone, E_mail, Login, Senha, Cam_imagem) VALUES (NULL, @CPF, @Data_nasc, @Nome, @CEP, @Rua, @Numero, @Bairro, @Cidade, @Estado, @Telefone, @E_mail, @Login, @Senha, NULL)";
+                string sql = "INSERT INTO tb_funcionario (CPF, Data_nasc, Nome, CEP, Rua, Numero, Bairro, Cidade, Estado, Telefone, E_mail, Login, Senha, Cam_imagem) VALUES (@cpf, @data_nasc, @nome, @cep, @rua, @numero, @bairro, @cidade, @estado, @telefone, @email, @login, @senha)";
 
                 MySqlCommand cmd = new MySqlCommand(sql, banco.conecta());
                 cmd.Parameters.AddWithValue("@CPF", this.cpf);

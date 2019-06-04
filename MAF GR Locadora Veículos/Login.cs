@@ -28,7 +28,7 @@ namespace MAF_GR_Locadora_Veículos
 
             if (verifica == true)
             {
-                MessageBox.Show("Usuário " + txtUsuario.Text + " Logado com sucesso!", "Acesso Liberado");
+                MessageBox.Show("Usuário " + txtUsuario.Text + " Logado com sucesso!");
                 this.Hide();
                 frmMenu logMenu = new frmMenu();
                 logMenu.FormClosed += (s, args) => this.Close();
@@ -36,7 +36,7 @@ namespace MAF_GR_Locadora_Veículos
             }
             else
             {
-                MessageBox.Show("Usuário ou senha inválido!", "Atenção");
+                MessageBox.Show("Usuário ou senha inválido!");
 
                 txtUsuario.Clear();
                 txtSenha.Clear();

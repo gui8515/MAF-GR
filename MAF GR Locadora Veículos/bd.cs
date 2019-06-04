@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace MAF_GR_Locadora_Veículos
@@ -35,7 +33,7 @@ namespace MAF_GR_Locadora_Veículos
             MySqlConnection con = new MySqlConnection(this.monta_string());
 
             con.Open();
-                        
+
             return con;
         }
 
