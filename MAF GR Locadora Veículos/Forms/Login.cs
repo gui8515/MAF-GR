@@ -22,11 +22,11 @@ namespace MAF_GR_Locadora_Veículos
             //Instanciando a classe aut_login (objeto aut_lg)
             aut_login aut_lg = new aut_login(txtUsuario.Text, txtSenha.Text);
 
-            bool verifica;
+            //bool verifica;
 
-            verifica = aut_lg.verAut_login();
+            //verifica = aut_lg.verAut_login();
 
-            if (verifica == true)
+            if (aut_lg.verAut_login())
             {
                 MessageBox.Show("Usuário " + txtUsuario.Text + " Logado com sucesso!", "Acesso Liberado");
                 this.Hide();
