@@ -37,7 +37,7 @@ namespace MAF_GR_Locadora_Veículos
         {
             try
             {
-                bd banco = new bd("mafgr_loc_veiculos");
+                bd banco = new bd();
 
                 string sql = "INSERT INTO tb_funcionario (ID_func, CPF, Data_nasc, Nome, CEP, Rua, Numero, Bairro, Cidade, Estado, Telefone, E_mail, Login, Senha, Cam_imagem) VALUES (NULL, @CPF, @Data_nasc, @Nome, @CEP, @Rua, @Numero, @Bairro, @Cidade, @Estado, @Telefone, @E_mail, @Login, @Senha, NULL)";
 
