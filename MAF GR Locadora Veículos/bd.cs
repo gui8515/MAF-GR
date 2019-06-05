@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace MAF_GR_Locadora_Veículos
@@ -12,21 +10,28 @@ namespace MAF_GR_Locadora_Veículos
     class bd
     {
         //Atributos
-        protected string serv = "localhost";
-        protected string usuario = "root";
-        protected string senha = "";
-        private string mafgr_loc_veiculos;
+        protected string serv = "sql137.main-hosting.eu";
+        protected string usuario = "u819008409_admin";
+        protected string senha = "12345678";
+        private string banco = "u819008409_ifsp";
 
         //Metodo construtor
-        public bd(string pdb)
+        public bd()
         {
-            mafgr_loc_veiculos = pdb;
+           
         }
 
         //Metodo string de conexão
         private string monta_string()
         {
-            return "Persist security Info=False; server=" + this.serv + ";database=" + this.mafgr_loc_veiculos + ";uid=" + this.usuario + ";password=" + this.senha;
+            try
+            {
+                return "Persist security Info=False; server=" + this.serv + ";database=" + this.banco + ";uid=" + this.usuario + ";password=" + this.senha;
+            }
+            catch (Exception ex)
+            {
+                return "erro de coneccao";
+            }
         }
 
         //Metodo de conexão
@@ -35,7 +40,7 @@ namespace MAF_GR_Locadora_Veículos
             MySqlConnection con = new MySqlConnection(this.monta_string());
 
             con.Open();
-                        
+
             return con;
         }
 
