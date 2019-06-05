@@ -10,6 +10,7 @@ namespace MAF_GR_Locadora_Veículos
     class bd
     {
         //Atributos
+        // https://auth-db137.weblink.com.br/ 
         protected string serv = "sql137.main-hosting.eu";
         protected string usuario = "u819008409_admin";
         protected string senha = "12345678";
