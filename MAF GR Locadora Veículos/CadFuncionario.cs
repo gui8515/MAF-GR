@@ -28,6 +28,22 @@ namespace MAF_GR_Locadora_Veículos
             if (verifica == true)
             {
                 MessageBox.Show("Funcionário cadastrado com sucesso", "Message");
+
+                mtxCPFFunc.Clear();
+                mtxDataFunc.Clear();
+                txtNomeFunc.Clear();
+                mtxCEPFunc.Clear();
+                txtRuaFunc.Clear();
+                txtNumFunc.Clear();
+                txtBairFunc.Clear();
+                txtCidFunc.Clear();
+                cmbEstFunc.SelectedIndex = -1;
+                mtxTelFunc.Clear();
+                txtEmailFunc.Clear();
+                txtLoginFunc.Clear();
+                txtSenhaFunc.Clear();
+
+                mtxCPFFunc.Focus();
             }
             else
             {

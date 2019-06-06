@@ -62,8 +62,10 @@
             // cmbEstCliente
             // 
             this.cmbEstCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbEstCliente.DropDownHeight = 100;
             this.cmbEstCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEstCliente.FormattingEnabled = true;
+            this.cmbEstCliente.IntegralHeight = false;
             this.cmbEstCliente.Location = new System.Drawing.Point(622, 263);
             this.cmbEstCliente.Name = "cmbEstCliente";
             this.cmbEstCliente.Size = new System.Drawing.Size(80, 24);

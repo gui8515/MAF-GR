@@ -62,17 +62,19 @@
             this.txtRenVeiculo.Location = new System.Drawing.Point(152, 72);
             this.txtRenVeiculo.Name = "txtRenVeiculo";
             this.txtRenVeiculo.Size = new System.Drawing.Size(170, 22);
-            this.txtRenVeiculo.TabIndex = 108;
+            this.txtRenVeiculo.TabIndex = 3;
             // 
             // cmbUFVeiculo
             // 
             this.cmbUFVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbUFVeiculo.DropDownHeight = 100;
             this.cmbUFVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUFVeiculo.FormattingEnabled = true;
+            this.cmbUFVeiculo.IntegralHeight = false;
             this.cmbUFVeiculo.Location = new System.Drawing.Point(372, 23);
             this.cmbUFVeiculo.Name = "cmbUFVeiculo";
             this.cmbUFVeiculo.Size = new System.Drawing.Size(80, 24);
-            this.cmbUFVeiculo.TabIndex = 107;
+            this.cmbUFVeiculo.TabIndex = 2;
             // 
             // lblUFVeiculo
             // 
@@ -82,7 +84,7 @@
             this.lblUFVeiculo.Location = new System.Drawing.Point(338, 31);
             this.lblUFVeiculo.Name = "lblUFVeiculo";
             this.lblUFVeiculo.Size = new System.Drawing.Size(28, 16);
-            this.lblUFVeiculo.TabIndex = 106;
+            this.lblUFVeiculo.TabIndex = 0;
             this.lblUFVeiculo.Text = "UF";
             // 
             // txtKilomVeiculo
@@ -92,7 +94,7 @@
             this.txtKilomVeiculo.Location = new System.Drawing.Point(152, 348);
             this.txtKilomVeiculo.Name = "txtKilomVeiculo";
             this.txtKilomVeiculo.Size = new System.Drawing.Size(170, 22);
-            this.txtKilomVeiculo.TabIndex = 100;
+            this.txtKilomVeiculo.TabIndex = 9;
             // 
             // lblKilomVeiculo
             // 
@@ -102,7 +104,7 @@
             this.lblKilomVeiculo.Location = new System.Drawing.Point(43, 354);
             this.lblKilomVeiculo.Name = "lblKilomVeiculo";
             this.lblKilomVeiculo.Size = new System.Drawing.Size(103, 16);
-            this.lblKilomVeiculo.TabIndex = 87;
+            this.lblKilomVeiculo.TabIndex = 0;
             this.lblKilomVeiculo.Text = "Kilometragem";
             // 
             // cmbStatusVeiculo
@@ -113,7 +115,7 @@
             this.cmbStatusVeiculo.Location = new System.Drawing.Point(152, 393);
             this.cmbStatusVeiculo.Name = "cmbStatusVeiculo";
             this.cmbStatusVeiculo.Size = new System.Drawing.Size(170, 24);
-            this.cmbStatusVeiculo.TabIndex = 101;
+            this.cmbStatusVeiculo.TabIndex = 10;
             // 
             // lblStatusVeiculo
             // 
@@ -123,7 +125,7 @@
             this.lblStatusVeiculo.Location = new System.Drawing.Point(39, 401);
             this.lblStatusVeiculo.Name = "lblStatusVeiculo";
             this.lblStatusVeiculo.Size = new System.Drawing.Size(107, 16);
-            this.lblStatusVeiculo.TabIndex = 88;
+            this.lblStatusVeiculo.TabIndex = 0;
             this.lblStatusVeiculo.Text = "Status Veículo";
             // 
             // cmbCategVeiculo
@@ -134,7 +136,7 @@
             this.cmbCategVeiculo.Location = new System.Drawing.Point(152, 301);
             this.cmbCategVeiculo.Name = "cmbCategVeiculo";
             this.cmbCategVeiculo.Size = new System.Drawing.Size(170, 24);
-            this.cmbCategVeiculo.TabIndex = 99;
+            this.cmbCategVeiculo.TabIndex = 8;
             // 
             // lblCategVeiculo
             // 
@@ -144,18 +146,20 @@
             this.lblCategVeiculo.Location = new System.Drawing.Point(70, 309);
             this.lblCategVeiculo.Name = "lblCategVeiculo";
             this.lblCategVeiculo.Size = new System.Drawing.Size(76, 16);
-            this.lblCategVeiculo.TabIndex = 90;
+            this.lblCategVeiculo.TabIndex = 0;
             this.lblCategVeiculo.Text = "Categoria";
             // 
             // cmbAnoVeiculo
             // 
             this.cmbAnoVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbAnoVeiculo.DropDownHeight = 100;
             this.cmbAnoVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAnoVeiculo.FormattingEnabled = true;
+            this.cmbAnoVeiculo.IntegralHeight = false;
             this.cmbAnoVeiculo.Location = new System.Drawing.Point(152, 254);
             this.cmbAnoVeiculo.Name = "cmbAnoVeiculo";
             this.cmbAnoVeiculo.Size = new System.Drawing.Size(80, 24);
-            this.cmbAnoVeiculo.TabIndex = 98;
+            this.cmbAnoVeiculo.TabIndex = 7;
             // 
             // lblAnoVeiculo
             // 
@@ -165,18 +169,20 @@
             this.lblAnoVeiculo.Location = new System.Drawing.Point(111, 262);
             this.lblAnoVeiculo.Name = "lblAnoVeiculo";
             this.lblAnoVeiculo.Size = new System.Drawing.Size(35, 16);
-            this.lblAnoVeiculo.TabIndex = 92;
+            this.lblAnoVeiculo.TabIndex = 0;
             this.lblAnoVeiculo.Text = "Ano";
             // 
             // cmbModVeiculo
             // 
             this.cmbModVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbModVeiculo.DropDownHeight = 100;
             this.cmbModVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbModVeiculo.FormattingEnabled = true;
+            this.cmbModVeiculo.IntegralHeight = false;
             this.cmbModVeiculo.Location = new System.Drawing.Point(152, 207);
             this.cmbModVeiculo.Name = "cmbModVeiculo";
             this.cmbModVeiculo.Size = new System.Drawing.Size(80, 24);
-            this.cmbModVeiculo.TabIndex = 97;
+            this.cmbModVeiculo.TabIndex = 6;
             // 
             // lblRenVeiculo
             // 
@@ -186,7 +192,7 @@
             this.lblRenVeiculo.Location = new System.Drawing.Point(72, 78);
             this.lblRenVeiculo.Name = "lblRenVeiculo";
             this.lblRenVeiculo.Size = new System.Drawing.Size(74, 16);
-            this.lblRenVeiculo.TabIndex = 91;
+            this.lblRenVeiculo.TabIndex = 0;
             this.lblRenVeiculo.Text = "Renavam";
             // 
             // lblModVeiculo
@@ -197,7 +203,7 @@
             this.lblModVeiculo.Location = new System.Drawing.Point(86, 215);
             this.lblModVeiculo.Name = "lblModVeiculo";
             this.lblModVeiculo.Size = new System.Drawing.Size(60, 16);
-            this.lblModVeiculo.TabIndex = 89;
+            this.lblModVeiculo.TabIndex = 0;
             this.lblModVeiculo.Text = "Modelo";
             // 
             // mtxPlacaVeiculo
@@ -208,7 +214,7 @@
             this.mtxPlacaVeiculo.Mask = "AAA-0000";
             this.mtxPlacaVeiculo.Name = "mtxPlacaVeiculo";
             this.mtxPlacaVeiculo.Size = new System.Drawing.Size(101, 22);
-            this.mtxPlacaVeiculo.TabIndex = 94;
+            this.mtxPlacaVeiculo.TabIndex = 1;
             // 
             // txtCorVeiculo
             // 
@@ -217,7 +223,7 @@
             this.txtCorVeiculo.Location = new System.Drawing.Point(152, 117);
             this.txtCorVeiculo.Name = "txtCorVeiculo";
             this.txtCorVeiculo.Size = new System.Drawing.Size(170, 22);
-            this.txtCorVeiculo.TabIndex = 95;
+            this.txtCorVeiculo.TabIndex = 4;
             // 
             // lblCorVeiculo
             // 
@@ -227,7 +233,7 @@
             this.lblCorVeiculo.Location = new System.Drawing.Point(114, 123);
             this.lblCorVeiculo.Name = "lblCorVeiculo";
             this.lblCorVeiculo.Size = new System.Drawing.Size(32, 16);
-            this.lblCorVeiculo.TabIndex = 86;
+            this.lblCorVeiculo.TabIndex = 0;
             this.lblCorVeiculo.Text = "Cor";
             // 
             // btnAdFotoVeiculo
@@ -238,7 +244,7 @@
             this.btnAdFotoVeiculo.Location = new System.Drawing.Point(651, 232);
             this.btnAdFotoVeiculo.Name = "btnAdFotoVeiculo";
             this.btnAdFotoVeiculo.Size = new System.Drawing.Size(130, 43);
-            this.btnAdFotoVeiculo.TabIndex = 104;
+            this.btnAdFotoVeiculo.TabIndex = 13;
             this.btnAdFotoVeiculo.Text = "Adicionar Foto";
             this.btnAdFotoVeiculo.UseVisualStyleBackColor = false;
             // 
@@ -261,9 +267,10 @@
             this.btnCancVeiculo.Location = new System.Drawing.Point(759, 458);
             this.btnCancVeiculo.Name = "btnCancVeiculo";
             this.btnCancVeiculo.Size = new System.Drawing.Size(130, 43);
-            this.btnCancVeiculo.TabIndex = 103;
+            this.btnCancVeiculo.TabIndex = 12;
             this.btnCancVeiculo.Text = "Cancelar";
             this.btnCancVeiculo.UseVisualStyleBackColor = false;
+            this.btnCancVeiculo.Click += new System.EventHandler(this.btnCancVeiculo_Click);
             // 
             // btnSalvarVeiculo
             // 
@@ -273,9 +280,10 @@
             this.btnSalvarVeiculo.Location = new System.Drawing.Point(623, 458);
             this.btnSalvarVeiculo.Name = "btnSalvarVeiculo";
             this.btnSalvarVeiculo.Size = new System.Drawing.Size(130, 43);
-            this.btnSalvarVeiculo.TabIndex = 102;
+            this.btnSalvarVeiculo.TabIndex = 11;
             this.btnSalvarVeiculo.Text = "Salvar";
             this.btnSalvarVeiculo.UseVisualStyleBackColor = false;
+            this.btnSalvarVeiculo.Click += new System.EventHandler(this.btnSalvarVeiculo_Click);
             // 
             // txtFabVeiculo
             // 
@@ -284,7 +292,7 @@
             this.txtFabVeiculo.Location = new System.Drawing.Point(152, 162);
             this.txtFabVeiculo.Name = "txtFabVeiculo";
             this.txtFabVeiculo.Size = new System.Drawing.Size(300, 22);
-            this.txtFabVeiculo.TabIndex = 96;
+            this.txtFabVeiculo.TabIndex = 5;
             // 
             // lblFabVeiculo
             // 
@@ -294,7 +302,7 @@
             this.lblFabVeiculo.Location = new System.Drawing.Point(64, 168);
             this.lblFabVeiculo.Name = "lblFabVeiculo";
             this.lblFabVeiculo.Size = new System.Drawing.Size(82, 16);
-            this.lblFabVeiculo.TabIndex = 93;
+            this.lblFabVeiculo.TabIndex = 0;
             this.lblFabVeiculo.Text = "Fabricante";
             // 
             // lblPlacaVeiculo
@@ -305,7 +313,7 @@
             this.lblPlacaVeiculo.Location = new System.Drawing.Point(42, 31);
             this.lblPlacaVeiculo.Name = "lblPlacaVeiculo";
             this.lblPlacaVeiculo.Size = new System.Drawing.Size(104, 16);
-            this.lblPlacaVeiculo.TabIndex = 85;
+            this.lblPlacaVeiculo.TabIndex = 0;
             this.lblPlacaVeiculo.Text = "Placa Veículo";
             // 
             // frmCadVeiculo
@@ -339,6 +347,7 @@
             this.Controls.Add(this.lblPlacaVeiculo);
             this.Name = "frmCadVeiculo";
             this.Text = "Cadastro de Veículo";
+            this.Load += new System.EventHandler(this.frmCadVeiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picFotoVeiculo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -45,7 +45,7 @@ namespace MAF_GR_Locadora_Veículos
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao conectar no banco de dados!" + "\n" + "Erro: " + ex.Message, "Banco de Dados");
+                MessageBox.Show("Erro ao conectar no banco de dados!" + "\n" + "\n" + "Erro: " + ex.Message, "Banco de Dados");
                 Environment.Exit(1);
                 return false;
             }

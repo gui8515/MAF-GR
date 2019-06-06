@@ -64,8 +64,10 @@
             // cmbEstFunc
             // 
             this.cmbEstFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbEstFunc.DropDownHeight = 100;
             this.cmbEstFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEstFunc.FormattingEnabled = true;
+            this.cmbEstFunc.IntegralHeight = false;
             this.cmbEstFunc.Location = new System.Drawing.Point(622, 214);
             this.cmbEstFunc.Name = "cmbEstFunc";
             this.cmbEstFunc.Size = new System.Drawing.Size(80, 24);

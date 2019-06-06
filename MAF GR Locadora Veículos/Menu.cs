@@ -30,5 +30,12 @@ namespace MAF_GR_Locadora_Veículos
             frmCadCliente cadCli = new frmCadCliente();
             cadCli.Show();
         }
+
+        private void btnCadVeiculo_Click(object sender, EventArgs e)
+        {
+            //Instanciando o botão Cadastro Funcionário (objeto cadFunc)
+            frmCadVeiculo cadVei = new frmCadVeiculo();
+            cadVei.Show();
+        }
     }
 }
